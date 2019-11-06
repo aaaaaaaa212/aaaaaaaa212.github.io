@@ -10,7 +10,7 @@
 <script>
     new daum.Postcode({
         oncomplete: function(data) {
-          window.TestApp.setAddress(data.zonecode, data.roadAddress);
+          window.TestApp.setAddress(data.zonecode, data.roadAddress,data.addressEnglish);
         }
     }).embed();
 </script>

@@ -4,14 +4,13 @@
 <meta content-Type = text/html; charset=UTF-8; content="width=device-width,height=device-height,initial-scale=1.0"/>
 </head>
 <body>
-<script type="text/javascript"; src="ttps://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=true"></script>
+<script type="text/javascript"; src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=true"></script>
 <script>
     new daum.Postcode({
         oncomplete: function(data) {
           window.TestApp.setAddress(data.zonecode, data.roadAddress,data.addressEnglish);
         }
-    }).embed();
-                                                                                                                                                                                                            
+    }).embed();                                                                                                                                                                                                   
 </script>
 </body>
 </html>

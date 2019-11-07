@@ -16,12 +16,8 @@
 
 </div>
 
-
-
 <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=true"></script>
-
 <!-- <script src=“http://dmaps.daum.net/map_js_init/postcode.v2.js”></script> -->
-
 <script>
 
 
@@ -87,6 +83,8 @@
         var fullAddr = data.address; // 최종 주소 변수
 
         var extraAddr = ''; // 조합형 주소 변수
+        
+        var AddressEnglish = data.addressEnglish;
 
 
 
@@ -166,7 +164,8 @@
 
 //         window.postMessageToiOS(postData);
 
-        window.Android.prosessDATA(data.zonecode + ", " + fullRoadAddr);
+        window.Android.prosessDATA(data.zonecode + ", " + fullRoadAddr + ", " + AddressEnglish);
+    
 
       },
 
